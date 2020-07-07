@@ -33,4 +33,7 @@ for n in "banana":
     print(n) # prints each character
 
 word = "bananana"
-print(word.find("na"))
+print(word.find("na")) # 2
+
+fruit = "banana"
+print(fruit[1]) # a
