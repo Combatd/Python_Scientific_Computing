@@ -37,3 +37,8 @@ print(word.find("na")) # 2
 
 fruit = "banana"
 print(fruit[1]) # a
+
+words = 'His e-mail is q-lar@freecodecamp.org'
+pieces = words.split()
+parts = pieces[3].split('-')
+new_str = parts[1] #lar@freecodecamp.org
