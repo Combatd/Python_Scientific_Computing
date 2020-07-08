@@ -61,3 +61,37 @@ data = '''
 '''
 info = json.loads(data)
 print(info[1]['name']) # Mrugesh
+
+# API - Application Program Interface
+
+# class PartyAnimal:
+#     x = 0
+#     def party(self):
+#         self.x = self.x + 2
+#         print(self.x)
+
+# an = PartyAnimal()
+# an.party() # 2
+# an.party() # 4
+
+class PartyAnimal:
+    x = 0
+    name = ''
+    def __init__(self, nam):
+        self.name = nam
+        print(self.name,'constructed')
+    def party(self):
+        self.x = self.x + 1
+        print(self.name,'party count',self.x)
+
+q = PartyAnimal('Quincy') # Quincy Constructed
+m = PartyAnimal('Miya') # Miya Constructed
+
+q.party() # 'Quincy party count 1'
+m.party() # 'Miya party count 1'
+q.party() # 'Quincy party count 2'
+
+# Inheritance is ability to create a new class by extending an existing class.
+
+# SQL command would you use to retrieve all users that have the email address quincy@freecodecamp.org
+# SELECT * FROM Users WHERE email="quincy@freecodecamp.org"
