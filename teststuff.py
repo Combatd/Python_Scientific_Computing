@@ -39,3 +39,25 @@ import urllib.request
 fhand = urllib.request.urlopen('http://data.pr4e.org/romeo.txt')
 for line in fhand:
     print(line.decode().strip())
+
+# Web Scraping: program or script pretends to be a browser and retrieves web pages,
+# looks at those web pages, extracts information, and then looks at more web pages
+
+# Search engines scrape web pages - we call this "spidering the web" or "web crawling"
+# BeautifulSoup library is used for parsing HTML and extracting data from HTML documents
+
+import json
+data = '''
+  [
+    { 'id' : '001',
+      'x' : '2',
+     'name' : 'Quincy'
+    } ,
+    { 'id' : '009',
+      'x' : '7',
+      'name' : 'Mrugesh'
+    }
+  ]
+'''
+info = json.loads(data)
+print(info[1]['name']) # Mrugesh
