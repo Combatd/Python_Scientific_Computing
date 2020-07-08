@@ -95,3 +95,9 @@ q.party() # 'Quincy party count 2'
 
 # SQL command would you use to retrieve all users that have the email address quincy@freecodecamp.org
 # SELECT * FROM Users WHERE email="quincy@freecodecamp.org"
+
+# string data should only be stored in database once
+
+# foreign key - A number that points to the primary key of an associated row in a different table.
+
+# INSERT - defines a new row by listing the fields we want to include followed by the values we want placed in the new row.
