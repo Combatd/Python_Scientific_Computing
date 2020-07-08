@@ -42,3 +42,17 @@ words = 'His e-mail is q-lar@freecodecamp.org'
 pieces = words.split()
 parts = pieces[3].split('-')
 new_str = parts[1] #lar@freecodecamp.org
+
+dict = {"Fri": 20, "Thu": 6, "Sat": 1}
+dict["Thu"] = 13
+dict["Sat"] = 2
+dict["Sun"] = 9
+print(dict) # {'Fri': 20, 'Thu': 13, 'Sat': 2, 'Sun': 9}
+
+# counts = { 'quincy' : 1 , 'mrugesh' : 42, 'beau': 100, '0': 10}
+# print(counts.get('kris', 0)) # 0 is default value when not found
+
+counts = { 'chuck' : 1 , 'annie' : 42, 'jan': 100}
+for key in counts:
+    if counts[key] > 10:
+        print(key, counts[key])
